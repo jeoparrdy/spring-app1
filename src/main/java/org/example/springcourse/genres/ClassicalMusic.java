@@ -1,5 +1,6 @@
-package org.example.springcourse;
+package org.example.springcourse.genres;
 
+import org.example.springcourse.Music;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
@@ -9,8 +10,6 @@ import javax.annotation.PreDestroy;
 /**
  * @author Neil Alishev
  */
-@Component
-@Scope("singleton")
 public class ClassicalMusic implements Music {
     @PostConstruct
     public void doMyInit(){

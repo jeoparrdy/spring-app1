@@ -1,11 +1,11 @@
-package org.example.springcourse;
+package org.example.springcourse.genres;
 
+import org.example.springcourse.Music;
 import org.springframework.stereotype.Component;
 
 /**
  * @author Neil Alishev
  */
-@Component
 public class RockMusic implements Music {
     @Override
     public String getSong() {

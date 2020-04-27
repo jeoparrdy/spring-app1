@@ -1,15 +1,15 @@
 package org.example.springcourse;
 
-import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.example.springcourse.config.SpringConfig;
+import org.example.springcourse.genres.ClassicalMusic;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 /**
  * @author Neil Alishev
  */
 public class TestSpring {
     public static void main(String[] args) {
-        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(
-                "applicationContext.xml"
-        );
+        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(SpringConfig.class);
 
 //        Music music = context.getBean("rockMusic", Music.class);
 //
