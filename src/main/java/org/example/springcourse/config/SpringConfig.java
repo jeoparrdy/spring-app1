@@ -9,6 +9,7 @@ import org.example.springcourse.genres.RockMusic;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
+import org.springframework.context.annotation.Scope;
 
 import java.util.Arrays;
 import java.util.List;
@@ -17,6 +18,7 @@ import java.util.List;
 @PropertySource("classpath:musicPlayer.properties")
 public class SpringConfig {
     @Bean
+    @Scope("prototype")
     public ClassicalMusic classicalMusic(){
         return new ClassicalMusic();
     }
